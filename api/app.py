@@ -5,10 +5,9 @@ from flask import Flask
 from api.db import (select_episode_by_season_and_episode_ids,
                     select_episodes_by_season_id,
                     select_ids_to_seasons)
-from api.decorators import jsonify, search
+from api.decorators import jsonify, search, sortable
 from api.encoder import AppEncoder
 from api.router import Router
-from api.sortable import sortable
 
 app = Flask(__name__)
 app.json_encoder = AppEncoder
