@@ -1,4 +1,4 @@
-from collections.__init__ import Counter
+from collections import Counter
 from functools import wraps
 from itertools import product
 from operator import attrgetter
