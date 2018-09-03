@@ -1,8 +1,8 @@
 import json
+from collections import Counter, defaultdict
 from functools import wraps
-from operator import attrgetter
-from collections import defaultdict, Counter
 from itertools import product
+from operator import attrgetter
 
 import flask
 from flask import Flask, request
